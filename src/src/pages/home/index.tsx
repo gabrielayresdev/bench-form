@@ -30,7 +30,6 @@ import {
   IntroduceContainer,
   SubTextAreaInput,
   InfoText,
-  ImportText,
   SessaoDiv,
   SubQuestionBar,
   SubLeftBar,
@@ -73,7 +72,7 @@ export default function Questionnaire() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [warningOpen, setWarningOpen] = useState<boolean>(true);
   const [modalContent, setModalContent] = useState<string>("");
-  const [questionsContent, setQuestionsContent] = useState(initialQuestions);
+  const [questionsContent] = useState(initialQuestions);
 
   const handleOpenModal = (content: string) => {
     setModalContent(content);

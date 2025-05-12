@@ -15,7 +15,7 @@ interface ModalProps {
 
 export default function WarnignModal({ onClose }: ModalProps) {
   const [researcherName, setResearcherName] = useState<string>("");
-  const [dateTime, setDateTime] = useState("");
+  const [, setDateTime] = useState("");
 
   useEffect(() => {
     const getCurrentDateTime = () => {
